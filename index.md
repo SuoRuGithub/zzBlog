@@ -6,24 +6,24 @@
 </head>
 
 <body>
-    <header>
-        <div class="banner">
-            <img src="banner.jpg" alt="banner">
-        </div>
-    </header>
-        <table border="0">
-    <tr>
-      <td width="75%">
-        <h1>Zhang Zhang</h1>
-        <p><b>Undergraduate student</b></p>
-        <p><b>Department of Automation, Tsinghua University</b></p>
-        <p><b>Email: z-z23@mails.tsinghua.edu.cn</b></p>
-        <p><b>Github: <a> https://github.com/SuoRuGithub </a> </b></p>
-      </td>
-      <td width="25%">
-        <img src="avatar.png" width="100%">   
-      </td>
-    </tr></table>
+  <header>
+      <div class="banner">
+          <img src="banner.jpg" alt="banner">
+      </div>
+  </header>
+  <table border="0">
+  <tr>
+    <td width="75%">
+      <h1>Zhang Zhang</h1>
+      <p><b>Undergraduate student</b></p>
+      <p><b>Department of Automation, Tsinghua University</b></p>
+      <p><b>Email: z-z23@mails.tsinghua.edu.cn</b></p>
+      <p><b>Github: <a> https://github.com/SuoRuGithub </a> </b></p>
+    </td>
+    <td width="25%">
+      <img src="avatar.png" width="100%">   
+    </td>
+  </tr></table>
 </body>
 
 ## What's New
