@@ -1,6 +1,20 @@
----
-tags:
----
+<head>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } });
+    </script>
+
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {
+             inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+             processEscapes: true
+           }
+         });
+    </script>
+
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+    </script>
+</head>
+
 *从本章至第五章，我们将讨论凸优化的理论部分*
 
 ---
