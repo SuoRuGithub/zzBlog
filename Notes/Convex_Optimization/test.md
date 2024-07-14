@@ -2,8 +2,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chapter2 Convex Sets</title>
-    <link rel="stylesheet" href="https://github.com/SuoRuGithub/zzBlog/tree/main/styles_note.css">
-    <script src="https://github.com/SuoRuGithub/zzBlog/tree/main/Scripts/callout.js"></script>
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/SuoRuGithub/zzBlog/main/styles_note.css">
+    <script src="https://raw.githubusercontent.com/SuoRuGithub/zzBlog/main/Scripts/callout.js"></script>
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } });
     </script>
