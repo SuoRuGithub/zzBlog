@@ -8,3 +8,23 @@ function parseCallouts(markdown) {
     return `<div class="callout ${type}">\n<strong>${type}</strong>\n${content.trim()}</div>\n`;
   });
 }
+
+const markdown = `
+> [!def] 
+> 这是定义
+
+> [!thm] 
+> 这是定理
+
+> [!lemma] 
+> 这是引理
+
+> [!example] 
+> 这是例子
+`;
+
+// 转换 Markdown
+const html = parseCallouts(markdown);
+
+// 输出 HTML
+console.log(html);
