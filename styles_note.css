@@ -1,0 +1,16 @@
+.callout[data-callout="def"] {
+    --callout-color: 5, 52, 139;
+    --callout-icon: lucide-alert-circle;
+}
+.callout[data-callout="thm"] {
+    --callout-color: 249, 166, 71;
+    --callout-icon: lucide-alert-circle;
+}
+.callout[data-callout="lemma"] {
+    --callout-color: 246, 120, 71;
+    --callout-icon: lucide-alert-circle;
+}
+.callout[data-callout="example"] {
+    --callout-color: 150, 207, 171;
+    --callout-icon: lucide-alert-circle;
+}
