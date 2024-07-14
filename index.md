@@ -32,8 +32,3 @@
 ## [My Notes](Notes/Notes.md)
 
 ## [CV](CV/zz_cv.pdf)
-
-
-
-
-
