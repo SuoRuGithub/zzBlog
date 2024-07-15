@@ -29,6 +29,7 @@ $\Sigma = \frac{}{2}$
 
 >[!note]
 >这是一个callout
+> $\int$
 
 ```cpp
 cout << "hello!" <<endl;
