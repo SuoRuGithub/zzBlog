@@ -1,7 +1,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chapter2 Convex Sets</title>
+    <title>test</title>
     <link rel="stylesheet" href="https://raw.githubusercontent.com/SuoRuGithub/zzBlog/main/styles_note.css">
     <script src="https://raw.githubusercontent.com/SuoRuGithub/zzBlog/main/Scripts/callout.js"></script>
     <script type="text/x-mathjax-config">
@@ -19,24 +19,19 @@
 </head>
 
 
+用来测试网页显示
 
-测试一下callout.
+$$
+\int f(x) dx
+$$
 
-> [!def] 
-> 这是定义
+$\Sigma = \frac{}{2}$
 
-> [!thm] 
-> 这是定理
+>[!note]
+>这是一个callout
 
-> [!lemma] 
-> 这是引理
-
-> [!example] 
-> 这是例子
+```cpp
+cout << "hello!" <<endl;
+```
 
 
-<div class="callout def">
-test
-test
-this is a multi-line
-note callout.</div>
