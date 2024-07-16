@@ -27,9 +27,18 @@ $$
 
 $\Sigma = \frac{}{2}$
 
->[!note]
->这是一个callout
+> [!note]
+> 这是一个callout
 > $\int$
+> test
+
+
+> [!note]
+> nihao
+> $\int f(s)ds$
+> 
+
+<div class="callout note"><strong>note</strong>test</div>
 
 ```cpp
 cout << "hello!" <<endl;
