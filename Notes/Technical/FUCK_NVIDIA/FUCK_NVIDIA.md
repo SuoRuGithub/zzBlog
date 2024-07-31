@@ -1,3 +1,6 @@
+
+# FUCK NVIDIA!
+
 # 安装Nvidia显卡驱动
 
 这次要跑一些cuRobo的程序，需要用到显卡。之前一直用服务器，本地的环境一直没有配过，不多说了，从配显卡驱动开始吧。
@@ -10,7 +13,7 @@
 
 Software & Updates $\rightarrow$ Additional Drivers
 
-![[Nvidia_fig1.png]]
+![Fig 1.](Nvidia_fig1.png)
 
 选择合适的驱动（何为合适？）即可（吗？）
 
@@ -61,50 +64,44 @@ E: Sub-process /usr/bin/dpkg returned an error code (1)
 
 使用`nvcc -V`命令，发现并没有安装成功。
 
-使用`nvidia-smi`，出现了下面的报错：
+使用`nvidia-smi`，还是有报错（抱歉我忘了是什么了）我按照(*抱歉我忘了是哪篇博客了*)的说法重启，再次使用`nvidia-smi`命令，又一次出现了之前遇到的Nvidia-smi无法与驱动程序通信的问题：
 
-```bash
-...
-```
-
-我按照[]()的说法重启，再次使用`nvidia-smi`命令，又一次出现了之前遇到的Nvidia-smi无法与驱动程序通信的问题：
-
-![[Nvidia_fig2.png]]
+![Fig 2.](Nvidia_fig2.png)
 
 然后我参考[上面提到的那篇博客](https://blog.csdn.net/very_big_house/article/details/135626122?spm=1001.2014.3001.5501)进行问题的排查，这次在执行`sudo modprobe nvidia`命令时出现了和博主不一样的结果：
 
-![[Nvidia_fig3.png]]
+![Fig 3.](Nvidia_fig3.png)
 
 于是我又去参考[这篇回答](https://askubuntu.com/questions/1413512/syslog-error-modprobe-fatal-module-nvidia-not-found-in-directory-lib-module)，并按照下图回答的指示进行修复：
 
-![[Nvidia_fig4.png]]
+![Fig 4.](Nvidia_fig4.png)
 
 但是我们需要知道nvidia驱动的版本，现在`nvidia-smi`显然是无法给我们答案了，可以输入命令`sudo dpkg --list | grep nvidia`
 
-![[Nvidia_fig5.png]]
+![Fig 5.](Nvidia_fig5.png)
 
 可以看到我们的nvidia driver版本为520（啊？不是535？）
 
 使用`uname -r`查到kenel版本：
 
-![[Nvidia_fig6.png]]
+![Fig 6.](Nvidia_fig6.png)
 
 按照上面的方法，输入`sudo apt install linux-modules-nvidia-520-5.15.0-117-generic`
 
 这下坏了
-![[Nvidia_fig7.png]]
+![Fig 7.](Nvidia_fig7.png)
 
 OK，大概是驱动版本和核心版本不匹配吧，那我们重新安装一下.
 
 输入`ubuntu-drivers devices`，如下图
 
-![[Nvidia_fig8.png]]
+![Fig 8.](Nvidia_fig8.png)
 
 我们安装推荐的`535`版本（之前我从官网下载的是550，也许是安cuda的时候给我改成520了？）
 
 使用`sudo apt install nvidia-driver-535`，结果出现了依赖问题~~（没完了是吧？）~~
 
-![[Nvidia_fig9.png]]
+![Fig 9.](Nvidia_fig9.png)
 
 OK，我拿这东西没有办法了，先把所有驱动卸载掉，重新安装一遍之前在官网下载的驱动：`sudo apt-get --purge remove "*nvidia*"`
 
@@ -123,7 +120,7 @@ ERROR: Unable to load the kernel module 'nvidia.ko'.  This happens most
 
 原因似乎是没有禁用nouveau？
 
-https://blog.csdn.net/ksws0292756/article/details/79160742
+参考[这篇](https://blog.csdn.net/ksws0292756/article/details/79160742)
 
 仍然失败
 
@@ -288,9 +285,9 @@ E: Sub-process /usr/bin/dpkg returned an error code (1)
 ```
 
 
-https://blog.csdn.net/sdbyp/article/details/139853774
-重启之后按照这个来！感觉要成功了
+重启之后按照[这个](https://blog.csdn.net/sdbyp/article/details/139853774
+)来！感觉要成功了.
 
-![[Nvidia_fig10.png]]
+![Fig 10.](Nvidia_fig10.png)
 
 牛眼泪了.
