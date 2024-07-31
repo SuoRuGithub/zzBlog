@@ -4,4 +4,4 @@
 
 ### [Convex Optimization](Convex_Optimization/Convex_optimization.md)
 
-### [Tech blog](Technical/Technival.md)
+### [Tech blog](Technical/Technical.md)
